@@ -13,10 +13,10 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 var { threadID, messageID } = event;
-	if (event.body.indexOf("রানা")==0 || (event.body.indexOf("Rana")==0 || (event.body.indexOf("king")==0 ||
-(event.body.indexOf("Rana ke")==0)))) {
+	if (event.body.indexOf("tom")==0 || (event.body.indexOf("Ruhul")==0 || (event.body.indexOf("Tom")==0 ||
+(event.body.indexOf("ruhul")==0)))) {
 		var msg = {
-				body: " বেডি পাগল 🤧 আর কিছু বলবো না কারন উনি আমার মালিক🌚😽💦:))"
+				body: " বেডি পাগল 🤧 আর কিছু বলবো না কারন উনি আমার মালিক 🌚😽💦:))"
     }
       api.sendMessage(msg, threadID, messageID);
     }
