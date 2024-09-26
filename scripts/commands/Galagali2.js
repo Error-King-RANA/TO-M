@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-  name: "iloveu5",
+  name: "RANA",
   version: "2.0.0",
   permission: 0,
   credits: "nayan",
@@ -13,7 +13,7 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("xudi")==0 || (event.body.indexOf("cudi")==0 || (event.body.indexOf("চুদি")==0 || (event.body.indexOf("khanki")==0)))) {
+	if (event.body.indexOf("xudi")==0 || (event.body.indexOf("আবাল")==0 || (event.body.indexOf("মুরগি")==0 || (event.body.indexOf("হাবা")==0)))) {
 		var msg = {
 				body: "━━━━━━━━━━━━━━━━━━━━
 ╭┈ ❒ 💬 | 𝐌𝐄𝐒𝐒𝐀𝐆𝐄:
