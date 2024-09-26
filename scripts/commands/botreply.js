@@ -156,7 +156,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("~তোমার কথা ভাবতেছি 🥰, তুমি কি কর  ❤️", threadID);
    };
 
-   if ((event.body.toLowerCase() == "rana") || (event.body.toLowerCase() == "Rana")) {
+   if ((event.body.toLowerCase() == "bos") || (event.body.toLowerCase() == " boss")) {
      return api.sendMessage(" ~ আমার বস এখন বিজি আছে,  যা বলার সন্ধ্যা ৬টার পরে বলবেন..//-🥰 \n https://www.facebook.com/ERROR.KING.RANA", threadID);
    };
 
