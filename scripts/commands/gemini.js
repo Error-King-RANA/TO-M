@@ -36,7 +36,7 @@ module.exports = {
     }
 
     try {
-      const { data } = await axios.post('https://geminipro-3rhs.onrender.com/chat-with-gemini', config); // api by Mohammad Rahad
+      const { data } = await axios.post('https://geminipro-ea98.onrender.com/chat-with-gemini', config); // api by Mohammad Rahad
       const result = data.result;
       NAYAN.react("✔️")
 
