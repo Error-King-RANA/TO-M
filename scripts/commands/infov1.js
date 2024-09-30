@@ -26,35 +26,35 @@ const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
 var link = ["https://i.postimg.cc/wjfnFgg9/Picsart-24-07-09-20-34-31-275.jpg","https://i.postimg.cc/Y91ncHKG/1724006315040.jpg"];
   
-var callback = () => api.sendMessage({body:`ADMIN AND BOT INFORMATION 
+var callback = () => api.sendMessage({body:`✘𝗔𝗗𝗠𝗜𝗡 & 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡✘ 
 ________________________________________
 
-❇️🅑︎🅞︎🅣︎ 🅝︎🅐︎🅜︎🅔︎ : ${global.config.BOTNAME}
+➤➤𝗕𝗢𝗧  𝗡𝗔𝗡𝗘 : ${global.config.BOTNAME}
 
-❇️𝐁𝐎𝐓 𝐀d𝐌𝐈𝐍 : 『𝐌𝐨𝐡𝐚𝐦𝐦𝐚𝐝 𝐑𝐀𝐍𝐀』
+➤➤𝗕𝗢𝗧 𝗔𝗗𝗠𝗜𝗡: 『𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 𝗥𝗔𝗡𝗔』
 
-❇️𝐀𝐃𝐃𝐑𝐄𝐒𝐒 :  𝐓𝐞𝐭𝐮𝐥𝐢𝐚 𝐏𝐚𝐧𝐜𝐡𝐚𝐠𝐚𝐫𝐡 𝐃𝐡𝐚𝐤𝐚
+➤➤𝗔𝗗𝗗𝗥𝗘𝗦𝗦    :  𝗧𝗘𝗧𝗨𝗟𝗜𝗔 𝗣𝗔𝗡𝗖𝗛𝗔𝗚𝗔𝗥𝗛 𝗗𝗛𝗔𝗞𝗔
 
-_____________CONTACT_____________
+▬▬▬▬▬▬✘𝗖𝗢𝗡𝗧𝗔𝗖𝗧✘▬▬▬▬▬▬
 
-❇️𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃: https://www.facebook.com/100063487970328 
+➜➜𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃: https://www.facebook.com/100063487970328 
 
-❇️𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐏𝐀𝐆𝐄 : বাল চাল 𝐍𝐎𝐓 𝐀𝐋𝐋𝐎𝐖 🤟🤟
+➜➜𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 : w.me/01752865115
 
-❇️𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗 : ${global.config.PREFIX}
+➜➜𝗕𝗢𝗧 𝗣𝗥𝗘𝗙𝗜𝗫: ${global.config.PREFIX}
 
-❇️𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑 : {𝐌𝐎𝐇𝐀𝐌𝐌𝐀𝐃 𝐑𝐀𝐍𝐀}
+➜➜𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 : {𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 𝗥𝗔𝗡𝗔}
 
-OTHER NFORMATION____________________
+▬▬▬▬▬▬✘𝗢𝗧𝗛𝗘𝗥 ∞ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡✘▬▬▬▬▬▬
 
-TYPE /admin 
+➜𝗧𝗬𝗣𝗘: /admin 
 
 ➟ UPTIME
 
-TODAY IS TIME : ${juswa} 
+𝗧𝗢𝗗𝗔𝗬𝗦 𝗧𝗜𝗠𝗘 : ${juswa} 
 
-BOT IS RUNNING ${hours}:${minutes}:${seconds}.
+𝗕𝗢𝗧 𝗜𝗦 𝗥𝗨𝗡𝗡𝗜𝗡𝗚 ${hours}:${minutes}:${seconds}.
 
-THANKS FOR USING ${global.config.BOTNAME} 『🤖🖤』`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+𝗧𝗛𝗔𝗡𝗞𝗦 𝗙𝗢𝗥 𝗨𝗦𝗜𝗡𝗚 ${global.config.BOTNAME} 『🤖🖤』`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
