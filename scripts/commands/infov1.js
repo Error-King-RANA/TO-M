@@ -24,10 +24,10 @@ const time = process.uptime(),
 		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.postimg.cc/wjfnFgg9/Picsart-24-07-09-20-34-31-275.jpg","https://i.postimg.cc/Y91ncHKG/1724006315040.jpg"];
+var link = ["https://i.imgur.com/V24INMM.jpeg","https://i.imgur.com/zcePoQq.jpeg"];
   
-var callback = () => api.sendMessage({body:`✘𝗔𝗗𝗠𝗜𝗡 & 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡✘ 
-________________________________________
+var callback = () => api.sendMessage({body:`▬✘𝗔𝗗𝗠𝗜𝗡 & 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡✘▬ 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
 ➤➤𝗕𝗢𝗧  𝗡𝗔𝗡𝗘 : ${global.config.BOTNAME}
 
@@ -45,7 +45,7 @@ ________________________________________
 
 ➜➜𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 : {𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 𝗥𝗔𝗡𝗔}
 
-▬▬▬▬▬▬✘𝗢𝗧𝗛𝗘𝗥 ∞ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡✘▬▬▬▬▬▬
+▬▬▬✘𝗢𝗧𝗛𝗘𝗥 ∞ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡✘▬▬▬
 
 ➜𝗧𝗬𝗣𝗘: /admin 
 
