@@ -16,13 +16,13 @@ module.exports.handleEvent = async function({ api, event, client, __GLOBAL }) {
   const axios = require('axios')
   const vid = (
     await axios.get(
-      'https://drive.google.com/file/d/1P3_Ss5WegA8Nrb3AyK0k5gkR2rK82gHo/view?usp=drivesdk',
+      'https://drive.google.com/uc?id=1HU7qpkMrv3EAAfKg21boRvevbEdj5xHj',
       { responseType: 'stream' }
     )
   ).data;
   if (event.body.indexOf("👍")==0 || event.body.indexOf("👎")==0 || event.body.indexOf("💪")==0 || event.body.indexOf("💪")==0) {
     var msg = {
-        body: "~ ইমরান বস এর গ্রুপে হাত মারা নিষেধ ..!!😭🥀",
+        body: "~ রানা বস এর গ্রুপে হাত মারা নিষেধ ..!!😭🥀",
         attachment: vid
       }
       api.sendMessage( msg, threadID, messageID);
