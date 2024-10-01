@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "r",
   version: "1.0.0",
-  Permssion: 1,
+  Permssion: 2,
   credits: "Rana",
   prefix: false,
   description: "admon only",
