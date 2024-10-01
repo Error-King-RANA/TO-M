@@ -16,7 +16,7 @@ module.exports.handleEvent = async function({ api, event, client, __GLOBAL }) {
   const axios = require('axios')
   const vid = (
     await axios.get(
-      'https://drive.google.com/uc?id=1DIpp7frCXzeLww8vJFURAjcqGXvwvlGo',
+      'https://drive.google.com/file/d/1P3_Ss5WegA8Nrb3AyK0k5gkR2rK82gHo/view?usp=drivesdk',
       { responseType: 'stream' }
     )
   ).data;
