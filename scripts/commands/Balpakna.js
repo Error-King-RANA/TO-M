@@ -16,7 +16,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	if(react.includes("💋") || react.includes("🥵") || react.includes("hot") || react.includes("I hate you") ||
      react.includes("bow") || 
 react.includes("baby") || react.includes("xan") || react.includes("xanu") || react.includes("sona") ||
-react.includes("jan") ||
+react.includes("💘") ||
 react.includes("xona") || react.includes("xuna") || react.includes("ভালবাসি") ||
 react.includes("janu") ||
 react.includes("break up") ||
