@@ -54,25 +54,23 @@ let gifPath = __dirname + '/Nayan/join/join.gif';
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
-    return api.sendMessage("~চলে এসেছি আমি পিচ্চি রানা তোমাদের মাঝে...!!🤭", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
-<------------------------------>  
-BOT CONNECTED SUCCESFUL !!! 
+    return api.sendMessage("~চলে এসেছি আমি পিচ্চি রানা তোমাদের মাঝে...!!🫣", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\n ASSALA-MUAlAIKUM..🥰☘️
+➽─────────────────────────❥  
+BOT CONNECTED SUCCESFUL...!! 
 
-APPROVAL ALLOW IN THIS GROUP!!!
+APPROVAL ALLOW IN THIS GROUP...!!
 <------------------------------>\n\nTO VIEW ANY COMMAND Use👉${global.config.PREFIX}help\nSee command👉 ${global.config.PREFIX}command
-\n\EXAMPLE:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
-<------------------------------>
-AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
+\n\n𝙴𝚡𝚊𝚖𝚙𝚕𝚎:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
+➽─────────────────────────❥
+─ׅ─ׅ─ׅ─៹۟▩⃟ꦿꦼ  [CONTACT BOT OPERATOR]   ᰰ᳝᳝▩⃟ꦿꦼ៹─ׅ─ׅ─ׅ─ 
 
-DEVELOPER :Mohammad RANA  
+𝗔𝗗𝗠𝗜𝗡 : 𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 𝗥𝗔𝗡𝗔  
 
-🟣Facebook Account Link: 
+🟣𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔: https://facebook.com/100063487970328
 
-https://www.facebook.com/100063487970328
+🔵𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙: wa.me/+8801752865115
 
-🔵WHATSAPP NUMBER: wa.me/+8801752865115
-
-🟢SUPPORT EMAIL: www.ranacyber910@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+🟢𝙶𝚖𝚊𝚒𝚕: www.ranacyber910@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
 })
 .catch(error => {
     console.error(error);
