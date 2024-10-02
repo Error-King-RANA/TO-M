@@ -14,7 +14,7 @@ module.exports.config = {
 };
 
 module.exports.handleEvent = async function ({ api, event }) {
-    if (!event.body || !(event.body.indexOf("Jan") === 0 || event.body.indexOf("jan") === 0)) return;
+    if (!event.body || !(event.body.indexOf("afro") === 0 || event.body.indexOf("Afro") === 0)) return;
     const args = event.body.split(/\s+/);
     args.shift();
 
@@ -22,7 +22,7 @@ module.exports.handleEvent = async function ({ api, event }) {
     let tid = threadID,
         mid = messageID;
     const content = encodeURIComponent(args.join(" "));
-    if (!args[0]) return api.sendMessage(" hmm bolo baby🥰 ...", tid, mid);
+    if (!args[0]) return api.sendMessage("__〲 hmm bolo baby....!!🥰 ...", tid, mid);
     try {
         console.log("Request:", `https://simsimi.fun/api/v2/?mode=talk&lang=bn&message=${content}&filter=true`); // Log request URL
         const res = await axios.get(`https://simsimi.fun/api/v2/?mode=talk&lang=bn&message=${content}&filter=true`);
@@ -43,7 +43,7 @@ module.exports.handleEvent = async function ({ api, event }) {
         }
     } catch (error) {
         console.error(error);
-        api.sendMessage("🤖 𝙰𝚗 𝚎𝚛𝚛𝚘𝚛 𝚘𝚌𝚌𝚞𝚛𝚎𝚍 𝚠𝚑𝚒𝚕𝚎 𝚐𝚎𝚝𝚝𝚒𝚗𝚐 𝙳𝚊𝚝𝚊𝚋𝚊𝚜𝚎, 𝚜𝚘𝚛𝚛𝚢 𝚋𝚊𝚋𝚎 🥺", tid, mid);
+        api.sendMessage("..Ja Vag Sala Dendi Khor...!!🥱😤", tid, mid);
     }
 };
 
