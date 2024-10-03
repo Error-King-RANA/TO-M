@@ -16,13 +16,13 @@ module.exports.handleEvent = async function({ api, event, client, __GLOBAL }) {
   const axios = require('axios')
   const vid = (
     await axios.get(
-      'https://drive.google.com/uc?id=1HU7qpkMrv3EAAfKg21boRvevbEdj5xHj',
+      'https://drive.google.com/uc?id=1PWBa8dpBWjG6OaUVqMn5sl-kAGNOYo-s',
       { responseType: 'stream' }
     )
   ).data;
   if (event.body.indexOf("👍")==0 || event.body.indexOf("👎")==0 || event.body.indexOf("💪")==0 || event.body.indexOf("💪")==0) {
     var msg = {
-        body: "~ রানা বস এর গ্রুপে হাত মারা নিষেধ ..!!😭🥀",
+        body: "~ বড় বড় মডেল কিউট কিউট নায়িকা , সুন্দর সুন্দর আপা তোমাদের বলতেছি , তোমরা আর IPhone 16 bro Max কিন্তুে পারবা না,, কারণ কি জান তুমাদের নেতা বিদেশে..!😗💭",
         attachment: vid
       }
       api.sendMessage( msg, threadID, messageID);
