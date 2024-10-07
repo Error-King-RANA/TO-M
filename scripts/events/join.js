@@ -12,7 +12,7 @@ const request = require('request');
 //const { join } = require('path');
 const axios = require('axios');
 const jimp = require("jimp")
-const fontlink = 'https://i.postimg.cc/xTc02x8j/lv-0-20240520144804.gif'
+const fontlink = 'https://drive.google.com/u/0/uc?id=10XFWm9F6u2RKnuVIfwoEdlav2HhkAUIB&export=download'
 let PRFX = `${global.config.PREFIX}`;
 
 module.exports.circle = async (image) => {
@@ -36,8 +36,8 @@ module.exports.run = async function({ api, event, Users }) {
   if (thu == "Thursday") thu = 'Thursday'
   if (thu == 'Friday') thu = 'Friday'
   if (thu == 'Saturday') thu = 'Saturday'
-  const time = moment.tz("Asia/dhaka").format("hh:mm:ss - DD/MM/YYYY");
-  const hours = moment.tz("Asia/dhaka").format("hh");
+  const time = moment.tz("Asia/dhaka").format("HH:mm:ss - DD/MM/YYYY");
+  const hours = moment.tz("Asia/dhaka").format("HH");
   const { commands } = global.client;
   const { threadID } = event;
   let threadInfo = await api.getThreadInfo(event.threadID);
@@ -48,30 +48,34 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
-    let gifUrl = 'https://i.imgur.com/ruok8HZ.mp4';
+    let gifUrl = 'https://i.postimg.cc/SNQXkB0y/lv-0-20231018174834.gif';
 let gifPath = __dirname + '/Nayan/join/join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
-    return api.sendMessage("~চলে এসেছি আমি পিচ্চি রানা তোমাদের মাঝে...!!🫣", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\n ASSALA-MUAlAIKUM..🥰☘️
-➽─────────────────────────❥  
-BOT CONNECTED SUCCESFUL...!! 
+  if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
+    api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
+    return api.sendMessage("~চলে এসেছি আমি পিচ্চি রানা তোমাদের মাঝে...!!🤭🙈", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+<------------------------------>  
+BOT CONNECTED SUCCESFUL !!! 
 
-APPROVAL ALLOW IN THIS GROUP...!!
+APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>\n\nTO VIEW ANY COMMAND Use👉${global.config.PREFIX}help\nSee command👉 ${global.config.PREFIX}command
-\n\n𝙴𝚡𝚊𝚖𝚙𝚕𝚎:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
-➽─────────────────────────❥
-─ׅ─ׅ─ׅ─៹۟▩⃟ꦿꦼ  [CONTACT BOT OPERATOR]   ᰰ᳝᳝▩⃟ꦿꦼ៹─ׅ─ׅ─ׅ─ 
+\n\EXAMPLE:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
+<------------------------------>
+AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-𝗔𝗗𝗠𝗜𝗡 : 𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 𝗥𝗔𝗡𝗔  
+💭Developer: Mohammad RANA 
 
-🟣𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔: https://facebook.com/100063487970328
+🟣Facebook Account Link: 
 
-🔵𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙: wa.me/+8801752865115
+https://www.facebook.com/ERROR.KING.RANA
 
-🟢𝙶𝚖𝚊𝚒𝚕: www.ranacyber910@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
-})
+🔵WHATSAPP NUMBER: wa.me/+8801752865115
+
+🟢SUPPORT EMAIL: www.ranacyber910@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+  }})
 .catch(error => {
     console.error(error);
 });
@@ -159,7 +163,7 @@ APPROVAL ALLOW IN THIS GROUP...!!
         abx.push(fs.createReadStream(__dirname + `/Nayan/join/${o}.png`))
       }
       memLength.sort((a, b) => a - b);
-      (typeof threadData.customJoin == "undefined") ? msg = ` ‎╔════•|      ✿      |•════╗ \n 💐আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ💐 \n ╚════•|      ✿      |•════╝  \n ∙──༅༎🩵 ‌{name} 🪽༎༅──∙ \n  ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨ \n to {threadName}\nyou're the {soThanhVien}th member on this group please enjoy. \n ┏•━•━•━ ◎ ━•━•━•┓ \n 🔥 𝗕𝗢𝗧  𝗢𝗪𝗡𝗘𝗥🔥 \n ┗•━•━•━ ◎ ━•━•━•┛ \n ╭────────────╮ \n ✜𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 𝗥𝗔𝗡𝗔✜ \n ╰────────────╯"\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = `Hello {name}\nWelcome to {threadName}\nyou're the {soThanhVien}th member on this group please enjoy"\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
       var nameAuthor = await Users.getNameUser(event.author)
       msg = msg
         .replace(/\{iduser}/g, iduser.join(', '))
@@ -180,4 +184,4 @@ APPROVAL ALLOW IN THIS GROUP...!!
       }
     } catch (e) { return console.log(e) };
   }
-}
+      }
