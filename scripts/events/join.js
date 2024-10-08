@@ -163,7 +163,7 @@ https://www.facebook.com/ERROR.KING.RANA
         abx.push(fs.createReadStream(__dirname + `/Nayan/join/${o}.png`))
       }
       memLength.sort((a, b) => a - b);
-      (typeof threadData.customJoin == "undefined") ? msg = `Hello {name}\nWelcome to {threadName}\nyou're the {soThanhVien}th member on this group please enjoy"\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = `আসসালামু ওয়ালাইকুম \n🥰প্রিয়🥰মেম্বার🥰 \n ╔━━━━━❖❖❁❖❖━━━━━╗ \n {name} \n ╚━━━━━❖❖❁❖❖━━━━━╝ \n\n 🥰🅆🄴🄻🄲🄾🄼🄴🥰 to {threadName}\n ♥⃝🥰᭄গ্রুঁপেঁরঁ পঁক্ষঁ থেঁকেঁ♥⃝🥰᭄ \n ♥⃝🥰᭄আঁপঁনাঁকেঁ স্বাঁগঁতঁমঁ♥⃝🥰 \n you are the {soThanhVien}th member on this group please enjoy \n 🥰᭄ 😍᭄ 😘᭄ \n "\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
       var nameAuthor = await Users.getNameUser(event.author)
       msg = msg
         .replace(/\{iduser}/g, iduser.join(', '))
