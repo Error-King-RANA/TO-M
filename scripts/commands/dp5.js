@@ -2,7 +2,7 @@ module.exports.config = {
   name: "dp5",
   version: "7.3.1",
   Permssion: 0,
-  credits: "islamick chat", 
+  credits: "rana", 
   prefix :true,
   description: "Get Pair From Mention",
   category: "png",
