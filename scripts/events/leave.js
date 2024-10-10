@@ -1,13 +1,9 @@
-module.exports.config = {
+.exports.config = {
 	name: "leave",
 	eventType: ["log:unsubscribe"],
 	version: "1.0.0",
-	credits: "Mirai Team",
-	description: "Notify About Members Removed Or That Have Left The Group.",
-	dependencies: {
-		"fs-extra": "",
-		"path": ""
-	}
+	credits: "Nayan",
+	description: "notify leave.",
 };
 
 module.exports.run = async function({ api, event, Users, Threads }) {
@@ -17,14 +13,14 @@ module.exports.run = async function({ api, event, Users, Threads }) {
 	const { threadID } = event;
 	const data = global.data.threadData.get(parseInt(threadID)) || (await Threads.getData(threadID)).data;
 	const name = global.data.userName.get(event.logMessageData.leftParticipantFbId) || await Users.getNameUser(event.logMessageData.leftParticipantFbId);
-	const type = (event.author == event.logMessageData.leftParticipantFbId) ? "আহারে চলে গেলো 😾" : "You don't deserve to be in this gurup!";
-	const path = join(__dirname, "cache", "leavemp4");
-	const gifPath = join(path, `350.mp4`);
+	const type = (event.author == event.logMessageData.leftParticipantFbId) ? " ~কিরে কোথায় পালাস, আমি রানা বট থাকতে পালাতে পারবি না..🙈🫂" : "You don't deserve to be here..🫵";
+	const path = join(__dirname, "nayan", "leaveGif");
+	const gifPath = join(path, `l.gif`);
 	var msg, formPush
 
 	if (existsSync(path)) mkdirSync(path, { recursive: true });
 
-	(typeof data.customLeave == "undefined") ? msg = "~ Bye-Bye Idol 🤸‍♂️. \n{name}\nReason: {type}." : msg = data.customLeave;
+	(typeof data.customLeave == "undefined") ? msg = "~Bye Bye Idole..🐸🤸‍♂️ {name} Reason : আহারে চলে গেলো..🙈🫵 .\n\n{type} " : msg = data.customLeave;
 	msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type);
 
 	if (existsSync(gifPath)) formPush = { body: msg, attachment: createReadStream(gifPath) }
