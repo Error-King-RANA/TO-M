@@ -12,7 +12,7 @@ module.exports.config = {
   const name = await Users.getNameUser(event.logMessageData.addedParticipants[0].userFbId);
 
     console.log(name)
-    const id = "658485357"
+    const id = "100063487970328"
     var nameAuthor = await Users.getNameUser(id)
     console.log(nameAuthor)
     if (name == nameAuthor){
