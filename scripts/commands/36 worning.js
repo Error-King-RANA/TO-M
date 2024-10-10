@@ -28,7 +28,7 @@ module.exports.handleEvent = async ({ event, api }) => {
     }
   }
 
-  const sensitiveKeywords = ["খানকিমাগি","সাওয়া","khanki","maderxud","xud","xuda","xudi","cuda","cudi","মাগি","মাদারচুদ","চুদ","চুদা","চুদি","ষুদা","","খাংকির পোলা","খানকি মাকি","খানকি মাগি","SawYa","Sawya","tor mare xudi","vuda","heda","bap","i will kill you", "i will stab you", "kill you", "stab you", "fuck you", "you idiot", "motherfucker"]; // Dagdagan mo lang kung gusto mong maraming keywords 
+  const sensitiveKeywords = ["খানকিমাগি","সাওয়া","khanki","maderxud","xud","xuda","xudi","cuda","cudi","মাগি","মাদারচুদ","চুদ","চুদা","চুদি","ষুদা","manger","খাংকির পোলা","খানকি মাকি","খানকি মাগি","SawYa","Sawya","tor mare xudi","vuda","heda","bap","i will kill you", "i will stab you", "kill you", "stab you", "fuck you", "you idiot", "motherfucker"]; // Dagdagan mo lang kung gusto mong maraming keywords 
   const warningText = "WARNING!";
 
   for (const keyword of sensitiveKeywords) {
