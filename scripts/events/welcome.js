@@ -1,4 +1,4 @@
-module.exports.config = {
+mle.exports.config = {
   name: "auther",
   eventType: ['log:subscribe'],
   version: "1.0.0",
