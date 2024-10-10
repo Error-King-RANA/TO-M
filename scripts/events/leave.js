@@ -1,4 +1,4 @@
-module.exports.config = {
+rmodule.exports.config = {
 	name: "leave",
 	eventType: ["log:unsubscribe"],
 	version: "1.0.0",
@@ -20,7 +20,7 @@ module.exports.run = async function({ api, event, Users, Threads }) {
 
 	if (existsSync(path)) mkdirSync(path, { recursive: true });
 
-	(typeof data.customLeave == "undefined") ? msg = "~Bye Bye Idol {name} _Reason : আহারে চলে গেলো..🫵🐸 .\n\n{type} " : msg = data.customLeave;
+	(typeof data.customLeave == "undefined") ? msg = "~Bye Bye Idol {name} _Reason : আহারে চলে গেলো..🫵🐸- {type} .\n\n{type} " : msg = data.customLeave;
 	msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type);
 
 	if (existsSync(gifPath)) formPush = { body: msg, attachment: createReadStream(gifPath) }
