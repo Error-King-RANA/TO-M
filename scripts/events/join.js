@@ -49,14 +49,14 @@ module.exports.run = async function({ api, event, Users }) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
     let gifUrl = 'https://i.imgur.com/4plmpfq.mp4';
-let gifPath = __dirname + '/Nayan/join/join.mp4;
+let gifPath = __dirname + '/Nayan/join/join.mp4';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("~চলে এসেছি আমি পিচ্চি রানা তোমাদের মাঝে...!!🤭🙈", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+    return api.sendMessage("চলে এসেছি আমি পিচ্চি রানা তোমাদের মাঝে..🙈!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -66,15 +66,15 @@ APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-💭Developer: Mohammad RANA 
+💭 DEVELOPER :Mohammad RANA 
 
-🟣Facebook Account Link: 
+💭 Facebook Account Link: 
 
 https://www.facebook.com/ERROR.KING.RANA
 
-🔵WHATSAPP NUMBER: wa.me/+8801752865115
+💭 WHATSAPP NUMBER: wa.me/01752865115
 
-🟢SUPPORT EMAIL: www.ranacyber910@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+💭 SUPPORT EMAIL: www.rsrana609@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);
@@ -163,7 +163,7 @@ https://www.facebook.com/ERROR.KING.RANA
         abx.push(fs.createReadStream(__dirname + `/Nayan/join/${o}.png`))
       }
       memLength.sort((a, b) => a - b);
-      (typeof threadData.customJoin == "undefined") ? msg = `আসসালামু ওয়ালাইকুম \n🥰প্রিয়🥰মেম্বার🥰 \n ╔━━━━━❖❖❁❖❖━━━━━╗ \n {name} \n ╚━━━━━❖❖❁❖❖━━━━━╝ \n\n 🥰🅆🄴🄻🄲🄾🄼🄴🥰 to {threadName}\n ♥⃝🥰᭄গ্রুঁপেঁরঁ পঁক্ষঁ থেঁকেঁ♥⃝🥰᭄ \n ♥⃝🥰᭄আঁপঁনাঁকেঁ স্বাঁগঁতঁমঁ♥⃝🥰 \n you are the {soThanhVien}th member on this group please enjoy \n 🥰᭄ 😍᭄ 😘᭄ \n "\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = `Hello {name}\nWelcome to {threadName}\nyou're the {soThanhVien}th member on this group please enjoy"\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
       var nameAuthor = await Users.getNameUser(event.author)
       msg = msg
         .replace(/\{iduser}/g, iduser.join(', '))
@@ -184,4 +184,4 @@ https://www.facebook.com/ERROR.KING.RANA
       }
     } catch (e) { return console.log(e) };
   }
-      }
+}
