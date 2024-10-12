@@ -1,12 +1,12 @@
-/** I am doing this coding with a lot of difficulty, please don't post it yourself¯\_(ツ)_/¯ **/
 module.exports.config = {
   name: "gojol",
   version: "1.0.0",
-  hasPermssion: 0,
-  credits: "MrTomXxX",
-  description: "MrTomXxX",
-  commandCategory: "Image Photo",
-  usages: "sad vedio",
+  permssion: 0,
+  credits: "Mohammad RANA",
+  prefix: true,
+  description: "Gojol",
+  category: "Image Photo",
+  usages: "gojol",
   cooldowns: 5,
   dependencies: {
     "request":"",
@@ -19,7 +19,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["--Islamic Gojol MrTomXxX 🕌--"];
+   var hi = ["--Islamic Gojol Mohammed RANA 🕌--"];
   var know = hi[Math.floor(Math.random() * hi.length)];
   var link = [
    "https://drive.google.com/uc?id=1xjyq3BrlW3bGrp8y7eedQSuddCbdvLMN",
