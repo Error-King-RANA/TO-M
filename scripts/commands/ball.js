@@ -1,15 +1,11 @@
-const axios = require('axios');
-const jimp = require("jimp");
-const fs = require("fs")
-
-
 module.exports = {
     config: {
         name: "ball",
         aliases: ["geda"],
         version: "1.2",
-        author: "Otineeeeyyyy",
+        author: "Mohammad RANA",
         countDown: 5,
+        prefix: true,
         role: 0,
         shortDescription: "tag a person to kick geda/ball shot",
         longDescription: "",
