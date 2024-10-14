@@ -73,7 +73,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "Tor boss ke") || (event.body.toLowerCase() == "tor boss ke")) {
-     return api.sendMessage("👉আমার বস𒄬𓆩๛⃝𝗥𝗔𝗡𝗔‣᭄𓆪 এটা তার আইডি লিংক,😼🙃 https://www.facebook.com/ERROR.KING.RANA ... !! )🙂🤟", threadID);
+     return api.sendMessage("👉আমার বস𒄬𓆩๛⃝𝗥𝗔𝗡𝗔‣᭄𓆪 এটা তার আইডি লিংক,😼🙃 https://www.facebook.com/RANA.IS.BUSY.OKAY ... !! )🙂🤟", threadID);
    };
   
     if ((event.body.toLowerCase() == "bot jan") || (event.body.toLowerCase() == "oii bot")) {
@@ -156,8 +156,8 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("~তোমার কথা ভাবতেছি 🥰, তুমি কি কর  ❤️", threadID);
    };
 
-   if ((event.body.toLowerCase() == "bos") || (event.body.toLowerCase() == " boss")) {
-     return api.sendMessage(" ~ আমার বস এখন বিজি আছে,  যা বলার সন্ধ্যা ৬টার পরে বলবেন..//-🥰 \n https://www.facebook.com/ERROR.KING.RANA", threadID);
+   if ((event.body.toLowerCase() == "admin") || (event.body.toLowerCase() == "owner")) {
+     return api.sendMessage(" ~ ︵🌻🖤༉আসসালামু আলাইকুম 🤍🌺 \n আমি ➤ Mohammad RANA (TOM) এর ভদ্র বট...😐🙈 \n যেকোনো প্রয়োজনে আমার বস এর সাথে যোগাযোগ করুন..🧑‍💻🫡 \n বস এর Id LINK 🤖⬇️ \n https://www.facebook.com/RANA.IS.BUSY.OKAY 🖤🤍", threadID);
    };
 
    if ((event.body.toLowerCase() == "Hello") || (event.body.toLowerCase() == "Hi")) {
@@ -178,11 +178,11 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "Bot rana ke") || (event.body.toLowerCase() == "Who is rana")) {
-     return api.sendMessage("️My Creator.  তার সাথে প্রেম করবা নি 😬  https://facebook.com/ERROR.KING.RANA :))))", threadID);
+     return api.sendMessage("️My Creator.  তার সাথে প্রেম করবা নি 😬  https://facebook.com/RANA.IS.BUSY.OKAY :))))", threadID);
    };
 
    if ((event.body.toLowerCase() == "nn nha mng") || (event.body.toLowerCase() == "nn nha mng")) {
-     return api.sendMessage("️Sleep well <3 Wish you all super nice dreams <3", threadID);
+     return api.sendMessage(" eep well <3 Wish you all super nice dreams <3", threadID);
    };
 
    if ((event.body.toLowerCase() == "tt go mn") || (event.body.toLowerCase() == "tt go mn")) {
