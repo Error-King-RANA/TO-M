@@ -1,11 +1,11 @@
 module.exports.config = {
-  name: "love99", 
+  name: "mygf", 
   version: "1.0.0", 
   permission: 0,
   credits: "SK-SIDDIK-KHAN",
   description: "",
   prefix: true,
-  category: "loove", 
+  category: "love", 
   usages: "user", 
   cooldowns: 5,
   dependencies: {
@@ -70,6 +70,6 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "LOVE 999 DONE", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "Pleass Baby Accept My Love..😘", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
   }
