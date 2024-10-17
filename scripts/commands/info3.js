@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "rana",
+    name: "admin",
     version: "1.0.0",
     permission: 0,
     credits: "nayan",
@@ -47,11 +47,11 @@ var callback = () => api.sendMessage({body:`∂σ ɳσƭ ƭɾµรƭ ƭɦε ɓσ
  ভাঁলোঁবাঁসাঁ : ভাৃঁইৃঁ আৃোমিৃঁ পিৃঁওৃঁরৃঁ সিৃঁন্গেৃঁলৃঁ 🖤🫂
  শঁখঁ      : তোঁমাঁরেঁ বঁলেঁ কিঁ লাঁভঁ পুঁরঁনঁ কঁইঁরাঁ দিঁবাঁ 😼🥹
 ╰────────────────────────⋞╯
-▬▬▬▬▬✘𝗖𝗢𝗡𝗧𝗔𝗖𝗧✘▬▬▬▬▬
+▬▬▬✘𝗖𝗢𝗡𝗧𝗔𝗖𝗧✘▬▬▬
 ➜➜𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃: https://www.facebook.com/100063487970328
 ➜➜𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 : wa.me/01752865115
 🐰 `,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI(`https://graph.facebook.com/100067540204855/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
+      return request(encodeURI(`https://graph.facebook.com/100063487970328/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
    };
