@@ -4,7 +4,8 @@ module.exports = {
   config: {
     name: "truth",
     version: "1.0",
-    author: "SiAM",
+    author: "TOM",
+    prefix:"true",
     countDown: 5,
     role: 0,
     shortDescription: "This command allows users to play the Truth or Dare game.",
