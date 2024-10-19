@@ -1,8 +1,7 @@
 module.exports.config = {
-    name: "hug2",
+    name: "hugv2",
     version: "3.1.1",
     hasPermssion: 0,
-    prefix: "true",
     credits: "MrTomXxX",
     description: "Hug 🥰",
     commandCategory: "img",
