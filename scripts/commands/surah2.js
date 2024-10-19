@@ -1,11 +1,12 @@
 module.exports.config = {
-  name: "sura",
+  name: "সূরা",
   version: "1.0.0",
-  hasPermssion: 0,
-  credits: "MrTomXxX",
-  description: "MrTomXxX",
-  commandCategory: "Hình ảnh",
-  usages: "sad vedio",
+  prefix: "true" ,
+  permssion: 0,
+  credits: "Mohammad Rana",
+  description: "surah",
+  category: "1",
+  usages: "সূরা",
   cooldowns: 5,
   dependencies: {
     "request":"",
