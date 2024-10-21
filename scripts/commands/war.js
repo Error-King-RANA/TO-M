@@ -1,10 +1,11 @@
 module.exports.config = {
     name: "fyt",
     version: "1.0.0",
+    prefix: "true",
     hasPermssion: 2,
-    credits: "... - Long LTD",
+    credits: "Long LTD",
     description: "War In Chatbox",
-    commandCategory: "wargroup",
+    category: "wargroup",
     usages: "[fyt]",
     cooldowns: 7,
     dependencies: {
