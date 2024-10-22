@@ -1,12 +1,12 @@
 module.exports.config = {
-  name: "🐞",
+  name: "😫",
   version: "1.0.0",
   permission: 0,
   credits: "MR-IMRAN",
   description: "",
   prefix: true, 
   category: "no prefix", 
-  usages: "😋",
+  usages: "😫",
   cooldowns: 5,
   dependencies: {
     "request": "",
@@ -16,13 +16,13 @@ module.exports.config = {
 };
 
 module.exports.handleEvent = async ({ api, event, Threads }) => {
-  if (event.body.indexOf("😩") == 0) {
+  if (event.body.indexOf("😫") == 0) {
     const axios = global.nodemodule["axios"];
     const request = global.nodemodule["request"];
     const fs = global.nodemodule["fs-extra"];
     var link = ["https://drive.google.com/uc?id=1YDOBrsLp7xW1lUmQuPNTQ41-FGJCDH4R"];
     var callback = () => api.sendMessage({
-      body: `_-_︵-❛❛🐰𝐭𝐡𝐢𝐬 𝐚𝐛𝐨𝐮𝐭 𝐥𝐢𝐧𝐞!-💚😽🌻 \n︵❛❛তাকেই ভালোবাসো যে লক্ষ মানুষের সামনেও' \nতোমাকে পরিচয় দিতে লজ্জা বোধ করবে না_⊰☺️🖤\n\n ✍️⎯͢⎯⃝🩵রাৃঁনা্ৃঁ ⎯͢⎯⃝🩷`,
+      body: `_-_︵-❛❛🐰𝐭𝐡𝐢𝐬 𝐚𝐛𝐨𝐮𝐭 𝐥𝐢𝐧𝐞!-💚😽🌻 \n︵❛❛তাকেই ভালোবাসো যে লক্ষ মানুষের সামনেও' \nতোমাকে পরিচয় দিতে লজ্জা বোধ করবে না_⊰☺️🖤\n\n ✍️⎯͢⎯⃝🩵 রাৃঁনা্ৃঁ ⎯͢⎯⃝🩷`,
       attachment: fs.createReadStream(__dirname + "/cache/2024.mp4")
     }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/2024.mp4"), event.messageID);
     const timeStart = Date.now();
